@@ -1,0 +1,170 @@
+<mxfile host="app.diagrams.net" agent="5.0" version="24.0.0">
+  <diagram id="c4-context" name="C4 Context — Целевое состояние">
+    <mxGraphModel dx="1800" dy="1100" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1200">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <!-- Title -->
+        <mxCell id="title" value="C4 Context Diagram — Целевая архитектура «Медикаменте» (MVP + To-Be)" style="text;html=1;fontSize=20;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="250" y="10" width="900" height="40" as="geometry" />
+        </mxCell>
+        <!-- Actors (People) -->
+        <mxCell id="actor1" value="Пациент&#xa;&#xa;[Персона]&#xa;Записывается на приём,&#xa;просматривает свои данные&#xa;через портал/моб. приложение" style="shape=mxgraph.c4.person2;whiteSpace=wrap;html=1;align=center;metaEdit=1;points=[[0.5,0,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0]];resizable=0;fillColor=#08427b;fontColor=#ffffff;strokeColor=none;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="60" y="80" width="200" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="actor2" value="Сотрудник ресепшена&#xa;&#xa;[Персона]&#xa;Управляет записями,&#xa;контрактами через&#xa;портал сотрудника" style="shape=mxgraph.c4.person2;whiteSpace=wrap;html=1;align=center;metaEdit=1;points=[[0.5,0,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0]];resizable=0;fillColor=#08427b;fontColor=#ffffff;strokeColor=none;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="60" y="370" width="200" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="actor3" value="Медицинский специалист&#xa;&#xa;[Персона]&#xa;Ведёт медкарты, назначает&#xa;анализы и лечение" style="shape=mxgraph.c4.person2;whiteSpace=wrap;html=1;align=center;metaEdit=1;points=[[0.5,0,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0]];resizable=0;fillColor=#08427b;fontColor=#ffffff;strokeColor=none;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="60" y="650" width="200" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="actor4" value="Администратор / DPO&#xa;&#xa;[Персона]&#xa;Управляет политиками&#xa;безопасности, мониторинг" style="shape=mxgraph.c4.person2;whiteSpace=wrap;html=1;align=center;metaEdit=1;points=[[0.5,0,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0]];resizable=0;fillColor=#08427b;fontColor=#ffffff;strokeColor=none;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="60" y="920" width="200" height="180" as="geometry" />
+        </mxCell>
+        <!-- System Boundary -->
+        <mxCell id="boundary" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#0B4D89;strokeWidth=3;dashed=1;dashPattern=5 5;" vertex="1" parent="1">
+          <mxGeometry x="340" y="60" width="700" height="1060" as="geometry" />
+        </mxCell>
+        <mxCell id="boundary_label" value="Информационная система «Медикаменте»" style="text;html=1;fontSize=16;fontStyle=1;fontColor=#0B4D89;align=center;" vertex="1" parent="1">
+          <mxGeometry x="440" y="65" width="500" height="30" as="geometry" />
+        </mxCell>
+        <!-- Core Systems -->
+        <mxCell id="sys1" value="Клиентский портал&#xa;&#xa;[Веб-приложение]&#xa;Запись на приём, ЛК пациента,&#xa;просмотр анализов, управление&#xa;согласиями" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#438DD5;fontColor=#ffffff;strokeColor=none;fontSize=11;arcSize=5;" vertex="1" parent="1">
+          <mxGeometry x="380" y="100" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="sys2" value="Портал сотрудника&#xa;&#xa;[Веб-приложение]&#xa;Управление записями, журнал&#xa;приёма, работа с медкартами" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#438DD5;fontColor=#ffffff;strokeColor=none;fontSize=11;arcSize=5;" vertex="1" parent="1">
+          <mxGeometry x="380" y="250" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="sys3" value="CRM-система&#xa;&#xa;[Сервис]&#xa;Сбор и управление данными&#xa;о клиентах, контракты" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#438DD5;fontColor=#ffffff;strokeColor=none;fontSize=11;arcSize=5;" vertex="1" parent="1">
+          <mxGeometry x="380" y="400" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="sys4" value="Платёжный шлюз&#xa;&#xa;[Сервис]&#xa;Обработка платежей,&#xa;токенизация данных карт" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#438DD5;fontColor=#ffffff;strokeColor=none;fontSize=11;arcSize=5;" vertex="1" parent="1">
+          <mxGeometry x="380" y="550" width="200" height="110" as="geometry" />
+        </mxCell>
+        <!-- Privacy & Security Layer -->
+        <mxCell id="priv_border" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#FF8C00;strokeWidth=2;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="95" width="390" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="priv_label" value="Privacy by Design Layer" style="text;html=1;fontSize=14;fontStyle=1;fontColor=#FF8C00;align=center;" vertex="1" parent="1">
+          <mxGeometry x="700" y="100" width="220" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="sec1" value="Identity &amp; Access&#xa;Management (IAM)&#xa;&#xa;[Keycloak]&#xa;MFA, SSO, RBAC/ABAC,&#xa;OAuth 2.0, OpenID Connect" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D4A017;fontColor=#ffffff;strokeColor=none;fontSize=10;arcSize=5;" vertex="1" parent="1">
+          <mxGeometry x="640" y="130" width="170" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="sec2" value="Consent Management&#xa;&#xa;[Сервис]&#xa;Управление согласиями&#xa;на обработку ПДн (152-ФЗ)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D4A017;fontColor=#ffffff;strokeColor=none;fontSize=10;arcSize=5;" vertex="1" parent="1">
+          <mxGeometry x="830" y="130" width="160" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="sec3" value="API Gateway&#xa;&#xa;[Kong / Spring Cloud]&#xa;Маршрутизация, rate limiting,&#xa;аутентификация, TLS termination" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D4A017;fontColor=#ffffff;strokeColor=none;fontSize=10;arcSize=5;" vertex="1" parent="1">
+          <mxGeometry x="640" y="260" width="170" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="sec4" value="Data Protection&#xa;Service&#xa;&#xa;[Сервис]&#xa;Шифрование, маскирование,&#xa;обезличивание, токенизация" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D4A017;fontColor=#ffffff;strokeColor=none;fontSize=10;arcSize=5;" vertex="1" parent="1">
+          <mxGeometry x="830" y="260" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="sec5" value="Data Tagging &amp;&#xa;Lineage&#xa;&#xa;[Apache Atlas]&#xa;Тегирование, классификация,&#xa;отслеживание происхождения" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D4A017;fontColor=#ffffff;strokeColor=none;fontSize=10;arcSize=5;" vertex="1" parent="1">
+          <mxGeometry x="700" y="375" width="170" height="90" as="geometry" />
+        </mxCell>
+        <!-- Analytics Layer -->
+        <mxCell id="anal_border" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#6A0DAD;strokeWidth=2;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="710" width="650" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="anal_label" value="Аналитический слой (Privacy-Aware Data Lake)" style="text;html=1;fontSize=14;fontStyle=1;fontColor=#6A0DAD;align=center;" vertex="1" parent="1">
+          <mxGeometry x="440" y="715" width="400" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="an1" value="Data Ingestion&#xa;(Apache NiFi)&#xa;&#xa;ETL с автоматическим&#xa;тегированием и классификацией" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#7B2D8E;fontColor=#ffffff;strokeColor=none;fontSize=10;arcSize=5;" vertex="1" parent="1">
+          <mxGeometry x="390" y="750" width="180" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="an2" value="Data Classification&#xa;Engine&#xa;&#xa;Автоматическая классификация&#xa;данных по уровням&#xa;конфиденциальности" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#7B2D8E;fontColor=#ffffff;strokeColor=none;fontSize=10;arcSize=5;" vertex="1" parent="1">
+          <mxGeometry x="600" y="750" width="180" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="an3" value="Data Warehouse&#xa;(ClickHouse)&#xa;&#xa;Обезличенные и&#xa;агрегированные данные&#xa;для BI/ML/AI" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#7B2D8E;fontColor=#ffffff;strokeColor=none;fontSize=10;arcSize=5;" vertex="1" parent="1">
+          <mxGeometry x="810" y="750" width="180" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="an4" value="BI Dashboard&#xa;(Grafana / Superset)&#xa;&#xa;Отчёты P&amp;L, ABC-анализ,&#xa;операционные метрики" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#7B2D8E;fontColor=#ffffff;strokeColor=none;fontSize=10;arcSize=5;" vertex="1" parent="1">
+          <mxGeometry x="390" y="880" width="180" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="an5" value="ML/AI Platform&#xa;(Jupyter + Python)&#xa;&#xa;Обучение моделей на&#xa;обезличенных данных" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#7B2D8E;fontColor=#ffffff;strokeColor=none;fontSize=10;arcSize=5;" vertex="1" parent="1">
+          <mxGeometry x="600" y="880" width="180" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="an6" value="Monitoring &amp; Alerting&#xa;(Victoria Metrics)&#xa;&#xa;Мониторинг метрик,&#xa;обнаружение аномалий,&#xa;алерты при утечках" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#7B2D8E;fontColor=#ffffff;strokeColor=none;fontSize=10;arcSize=5;" vertex="1" parent="1">
+          <mxGeometry x="810" y="880" width="180" height="100" as="geometry" />
+        </mxCell>
+        <!-- Lab Integration -->
+        <mxCell id="lab_border" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#228B22;strokeWidth=2;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="510" width="390" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="lab_label" value="Интеграция с лабораторией" style="text;html=1;fontSize=13;fontStyle=1;fontColor=#228B22;" vertex="1" parent="1">
+          <mxGeometry x="700" y="515" width="240" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lab1" value="Lab Integration API&#xa;&#xa;[REST API + mTLS]&#xa;Обмен направлениями&#xa;и результатами анализов" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2E8B57;fontColor=#ffffff;strokeColor=none;fontSize=10;arcSize=5;" vertex="1" parent="1">
+          <mxGeometry x="640" y="545" width="170" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lab2" value="Audit Trail&#xa;&#xa;[ELK Stack]&#xa;Журнал всех обращений&#xa;к данным, аудит доступа" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2E8B57;fontColor=#ffffff;strokeColor=none;fontSize=10;arcSize=5;" vertex="1" parent="1">
+          <mxGeometry x="830" y="545" width="160" height="100" as="geometry" />
+        </mxCell>
+        <!-- External Systems -->
+        <mxCell id="ext1" value="Лаборатория&#xa;анализов&#xa;&#xa;[Внешняя система]&#xa;Приём направлений,&#xa;отправка результатов" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#999999;fontColor=#ffffff;strokeColor=none;fontSize=10;arcSize=5;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="300" width="170" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="ext2" value="1С:Бухгалтерия&#xa;&#xa;[Серверный режим]&#xa;Учёт платежей, зарплата,&#xa;кадры, налоги" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#999999;fontColor=#ffffff;strokeColor=none;fontSize=10;arcSize=5;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="450" width="170" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ext3" value="1С:Торговля&#xa;и склад&#xa;&#xa;[Серверный режим]&#xa;Учёт ТМЦ" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#999999;fontColor=#ffffff;strokeColor=none;fontSize=10;arcSize=5;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="580" width="170" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="ext4" value="Notification Service&#xa;&#xa;[Внешний]&#xa;SMS, Push,&#xa;голосовой робот" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#999999;fontColor=#ffffff;strokeColor=none;fontSize=10;arcSize=5;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="150" width="170" height="100" as="geometry" />
+        </mxCell>
+        <!-- Key Relationships -->
+        <mxCell id="r1" value="Записывается на приём,&#xa;просматривает данные [HTTPS]" style="endArrow=classic;html=1;fontSize=9;strokeWidth=1;" edge="1" parent="1" source="actor1" target="sys1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r2" value="Управляет записями [HTTPS]" style="endArrow=classic;html=1;fontSize=9;strokeWidth=1;" edge="1" parent="1" source="actor2" target="sys2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r3" value="Ведёт медкарты [HTTPS]" style="endArrow=classic;html=1;fontSize=9;strokeWidth=1;" edge="1" parent="1" source="actor3" target="sys2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r4" value="Мониторинг, управление&#xa;политиками [HTTPS]" style="endArrow=classic;html=1;fontSize=9;strokeWidth=1;" edge="1" parent="1" source="actor4" target="an6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r5" value="Аутентификация [OAuth 2.0]" style="endArrow=classic;html=1;fontSize=9;strokeWidth=1;dashed=1;" edge="1" parent="1" source="sys1" target="sec1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r6" value="Аутентификация [OAuth 2.0]" style="endArrow=classic;html=1;fontSize=9;strokeWidth=1;dashed=1;" edge="1" parent="1" source="sys2" target="sec1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r7" value="API [mTLS]" style="endArrow=classic;startArrow=classic;html=1;fontSize=9;strokeWidth=1;" edge="1" parent="1" source="lab1" target="ext1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r8" value="Платежи [TLS, PCI DSS]" style="endArrow=classic;html=1;fontSize=9;strokeWidth=1;" edge="1" parent="1" source="sys4" target="ext2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r9" value="Данные ТМЦ [TLS]" style="endArrow=classic;html=1;fontSize=9;strokeWidth=1;" edge="1" parent="1" source="ext2" target="ext3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r10" value="Уведомления [TLS]" style="endArrow=classic;html=1;fontSize=9;strokeWidth=1;" edge="1" parent="1" source="sys1" target="ext4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r11" value="Обезличенные данные" style="endArrow=classic;html=1;fontSize=9;strokeWidth=1;strokeColor=#6A0DAD;" edge="1" parent="1" source="sec4" target="an1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r12" value="Классификация" style="endArrow=classic;html=1;fontSize=9;strokeWidth=1;strokeColor=#6A0DAD;" edge="1" parent="1" source="an1" target="an2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r13" value="Размеченные данные" style="endArrow=classic;html=1;fontSize=9;strokeWidth=1;strokeColor=#6A0DAD;" edge="1" parent="1" source="an2" target="an3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r14" value="" style="endArrow=classic;html=1;fontSize=9;strokeWidth=1;strokeColor=#6A0DAD;" edge="1" parent="1" source="an3" target="an4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r15" value="" style="endArrow=classic;html=1;fontSize=9;strokeWidth=1;strokeColor=#6A0DAD;" edge="1" parent="1" source="an3" target="an5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- Legend -->
+        <mxCell id="legend" value="Обозначения:&#xa;&#xa;🔵 Синие — основные системы «Медикаменте»&#xa;🟡 Жёлтые — Privacy by Design Layer (безопасность)&#xa;🟣 Фиолетовые — аналитический слой (обезличенные данные)&#xa;🟢 Зелёные — интеграция с лабораторией&#xa;⬜ Серые — внешние системы&#xa;&#xa;Все внутренние коммуникации защищены TLS 1.3&#xa;Внешние API-интеграции — mTLS" style="shape=note;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="730" width="350" height="200" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
